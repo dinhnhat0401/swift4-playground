@@ -16,7 +16,7 @@ print(str.isEmpty)
 //print(str.dropFirst())
 print(String(str.reversed()))
 str.count
-print(str.last!.unicodeScalars[0].isASCII)
+print(str.last!.unicodeScalars.first!.isASCII)
 let str1 = str.filter { c in
     let isASCII = c.unicodeScalars.reduce(true, { x, y in
         y.isASCII
